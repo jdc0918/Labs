@@ -1,0 +1,7 @@
+Minimizer initializing for /home/cs6340/fuzzing/campaign_dYB3wS/iteration_WPC4rX/BFF_testcase_n8a5vX/sf_d704174fc94c8ca37a7f1aad4f1b2c4e-7rPaif.csv
+	using debugger timeout: 0.98611
+	confidence level: 0.99900
+	starting Hamming Distance is 2
+Attempting to minimize testcase(es) [406419b7b77a45a92eb39be8caf77eca]
+We were looking for [406419b7b77a45a92eb39be8caf77eca] ...
+Bytemap: ['0x43d', '0x4b2']

@@ -1,0 +1,53 @@
+*** Error in `/home/cs6340/csvParser': malloc(): memory corruption (fast): 0x00000000021492f0 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7f52f50d37e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x82651)[0x7f52f50de651]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_malloc+0x54)[0x7f52f50e0184]
+/usr/lib/x86_64-linux-gnu/libstdc++.so.6(_Znwm+0x18)[0x7f52f59d2e78]
+/home/cs6340/csvParser[0x42b4f7]
+/home/cs6340/csvParser[0x42b49c]
+/home/cs6340/csvParser[0x42b443]
+/home/cs6340/csvParser[0x42b37f]
+/home/cs6340/csvParser[0x42b224]
+/home/cs6340/csvParser[0x42af23]
+/home/cs6340/csvParser[0x429e37]
+/home/cs6340/csvParser[0x429566]
+/home/cs6340/csvParser[0x429255]
+/home/cs6340/csvParser[0x404cd5]
+/home/cs6340/csvParser[0x403f56]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7f52f507c830]
+/home/cs6340/csvParser[0x403a19]
+======= Memory map: ========
+00400000-00456000 r-xp 00000000 08:01 393406                             /home/cs6340/csvParser
+00655000-00656000 r--p 00055000 08:01 393406                             /home/cs6340/csvParser
+00656000-00657000 rw-p 00056000 08:01 393406                             /home/cs6340/csvParser
+020ac000-021de000 rw-p 00000000 00:00 0                                  [heap]
+7f52f0000000-7f52f0021000 rw-p 00000000 00:00 0 
+7f52f0021000-7f52f4000000 ---p 00000000 00:00 0 
+7f52f505c000-7f52f521c000 r-xp 00000000 08:01 400173                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f52f521c000-7f52f541c000 ---p 001c0000 08:01 400173                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f52f541c000-7f52f5420000 r--p 001c0000 08:01 400173                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f52f5420000-7f52f5422000 rw-p 001c4000 08:01 400173                     /lib/x86_64-linux-gnu/libc-2.23.so
+7f52f5422000-7f52f5426000 rw-p 00000000 00:00 0 
+7f52f5426000-7f52f543c000 r-xp 00000000 08:01 400211                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f52f543c000-7f52f563b000 ---p 00016000 08:01 400211                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f52f563b000-7f52f563c000 rw-p 00015000 08:01 400211                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f52f563c000-7f52f5744000 r-xp 00000000 08:01 400243                     /lib/x86_64-linux-gnu/libm-2.23.so
+7f52f5744000-7f52f5943000 ---p 00108000 08:01 400243                     /lib/x86_64-linux-gnu/libm-2.23.so
+7f52f5943000-7f52f5944000 r--p 00107000 08:01 400243                     /lib/x86_64-linux-gnu/libm-2.23.so
+7f52f5944000-7f52f5945000 rw-p 00108000 08:01 400243                     /lib/x86_64-linux-gnu/libm-2.23.so
+7f52f5945000-7f52f5ab7000 r-xp 00000000 08:01 14567                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f52f5ab7000-7f52f5cb7000 ---p 00172000 08:01 14567                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f52f5cb7000-7f52f5cc1000 r--p 00172000 08:01 14567                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f52f5cc1000-7f52f5cc3000 rw-p 0017c000 08:01 14567                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7f52f5cc3000-7f52f5cc7000 rw-p 00000000 00:00 0 
+7f52f5cc7000-7f52f5ced000 r-xp 00000000 08:01 400145                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f52f5ecf000-7f52f5ed5000 rw-p 00000000 00:00 0 
+7f52f5eeb000-7f52f5eec000 rw-p 00000000 00:00 0 
+7f52f5eec000-7f52f5eed000 r--p 00025000 08:01 400145                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f52f5eed000-7f52f5eee000 rw-p 00026000 08:01 400145                     /lib/x86_64-linux-gnu/ld-2.23.so
+7f52f5eee000-7f52f5eef000 rw-p 00000000 00:00 0 
+7ffec868f000-7ffec86b0000 rw-p 00000000 00:00 0                          [stack]
+7ffec87da000-7ffec87dd000 r--p 00000000 00:00 0                          [vvar]
+7ffec87dd000-7ffec87df000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]

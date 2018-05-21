@@ -1,0 +1,5 @@
+Minimizer initializing for /home/cs6340/fuzzing/campaign_dYB3wS/iteration_1XupIT/BFF_testcase_Kju3R8/sf_987dd60dc962e6d702a64cc084c3cb01-416.csv
+	using debugger timeout: 2.08283
+	confidence level: 0.99900
+	starting Hamming Distance is 1
+Unable to minimize: Already minimized
