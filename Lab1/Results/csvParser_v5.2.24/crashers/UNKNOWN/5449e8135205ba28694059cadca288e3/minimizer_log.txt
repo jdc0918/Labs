@@ -1,0 +1,19 @@
+Minimizer initializing for /home/cs6340/fuzzing/campaign_wm6pl6/iteration_3xBckj/BFF_testcase__FGPE7/sf_474b4d11880b871552620a3fb5a317f3-1.csv
+	using debugger timeout: 1.29878
+	confidence level: 0.99900
+	starting Hamming Distance is 45
+Attempting to minimize testcase(es) [5449e8135205ba28694059cadca288e3]
+start=45 min=45 target_guess=1 curr=21 chance=0.50000 miss=0/11 total_misses=0/1 u_crashes=0
+testcase=df675f37df4186880d488add7e0cd542 signal=SIGSEGV
+start=45 min=45 target_guess=1 curr=21 chance=0.50000 miss=1/11 total_misses=1/2 u_crashes=1
+start=45 min=45 target_guess=1 curr=24 chance=0.50000 miss=2/11 total_misses=2/3 u_crashes=1
+start=45 min=45 target_guess=1 curr=30 chance=0.50000 miss=3/11 total_misses=3/4 u_crashes=1
+testcase=5449e8135205ba28694059cadca288e3 signal=SIGSEGV
+start=45 min=30 target_guess=1 curr=17 chance=0.50000 miss=0/10 total_misses=3/5 u_crashes=2
+start=45 min=17 target_guess=1 curr=11 chance=0.50000 miss=0/11 total_misses=3/6 u_crashes=2
+start=45 min=11 target_guess=1 curr=5 chance=0.50000 miss=0/12 total_misses=3/7 u_crashes=2
+Exhaustively checking remaining 5 bytes
+We were looking for [5449e8135205ba28694059cadca288e3] ...
+	...and found df675f37df4186880d488add7e0cd542	3 times
+	...and found 5449e8135205ba28694059cadca288e3	5 times
+Bytemap: ['0xa31', '0x1aa8', '0x28bd', '0x2a64']

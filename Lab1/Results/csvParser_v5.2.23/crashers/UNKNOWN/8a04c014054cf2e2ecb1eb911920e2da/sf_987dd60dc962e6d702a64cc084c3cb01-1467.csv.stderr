@@ -1,0 +1,71 @@
+*** Error in `/home/cs6340/csvParser': malloc(): smallbin double linked list corrupted: 0x0000000002031370 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x777e5)[0x7fee3e65a7e5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x82651)[0x7fee3e665651]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_malloc+0x54)[0x7fee3e667184]
+/usr/lib/x86_64-linux-gnu/libstdc++.so.6(_Znwm+0x18)[0x7fee3ef59e78]
+/home/cs6340/csvParser[0x4198ac]
+/home/cs6340/csvParser[0x419695]
+/home/cs6340/csvParser[0x40c4bc]
+/home/cs6340/csvParser[0x40c45d]
+/home/cs6340/csvParser[0x40c3ed]
+/home/cs6340/csvParser[0x40c32f]
+/home/cs6340/csvParser[0x40c2e9]
+/home/cs6340/csvParser[0x40c2a9]
+/home/cs6340/csvParser[0x40c122]
+/home/cs6340/csvParser[0x40bda1]
+/home/cs6340/csvParser[0x40bc5d]
+/home/cs6340/csvParser[0x40bbb0]
+/home/cs6340/csvParser[0x40b143]
+/home/cs6340/csvParser[0x40f955]
+/home/cs6340/csvParser[0x40e8fc]
+/home/cs6340/csvParser[0x40d09f]
+/home/cs6340/csvParser[0x40caa8]
+/home/cs6340/csvParser[0x40c7b9]
+/home/cs6340/csvParser[0x40c7dc]
+/home/cs6340/csvParser[0x40c7dc]
+/home/cs6340/csvParser[0x40c7dc]
+/home/cs6340/csvParser[0x40c7dc]
+/home/cs6340/csvParser[0x406479]
+/home/cs6340/csvParser[0x405d58]
+/home/cs6340/csvParser[0x405a11]
+/home/cs6340/csvParser[0x405932]
+/home/cs6340/csvParser[0x40586b]
+/home/cs6340/csvParser[0x404ec3]
+/home/cs6340/csvParser[0x4043c8]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0)[0x7fee3e603830]
+/home/cs6340/csvParser[0x403a19]
+======= Memory map: ========
+00400000-00456000 r-xp 00000000 08:01 393406                             /home/cs6340/csvParser
+00655000-00656000 r--p 00055000 08:01 393406                             /home/cs6340/csvParser
+00656000-00657000 rw-p 00056000 08:01 393406                             /home/cs6340/csvParser
+01f60000-02096000 rw-p 00000000 00:00 0                                  [heap]
+7fee38000000-7fee38021000 rw-p 00000000 00:00 0 
+7fee38021000-7fee3c000000 ---p 00000000 00:00 0 
+7fee3e5e3000-7fee3e7a3000 r-xp 00000000 08:01 400173                     /lib/x86_64-linux-gnu/libc-2.23.so
+7fee3e7a3000-7fee3e9a3000 ---p 001c0000 08:01 400173                     /lib/x86_64-linux-gnu/libc-2.23.so
+7fee3e9a3000-7fee3e9a7000 r--p 001c0000 08:01 400173                     /lib/x86_64-linux-gnu/libc-2.23.so
+7fee3e9a7000-7fee3e9a9000 rw-p 001c4000 08:01 400173                     /lib/x86_64-linux-gnu/libc-2.23.so
+7fee3e9a9000-7fee3e9ad000 rw-p 00000000 00:00 0 
+7fee3e9ad000-7fee3e9c3000 r-xp 00000000 08:01 400211                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fee3e9c3000-7fee3ebc2000 ---p 00016000 08:01 400211                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fee3ebc2000-7fee3ebc3000 rw-p 00015000 08:01 400211                     /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fee3ebc3000-7fee3eccb000 r-xp 00000000 08:01 400243                     /lib/x86_64-linux-gnu/libm-2.23.so
+7fee3eccb000-7fee3eeca000 ---p 00108000 08:01 400243                     /lib/x86_64-linux-gnu/libm-2.23.so
+7fee3eeca000-7fee3eecb000 r--p 00107000 08:01 400243                     /lib/x86_64-linux-gnu/libm-2.23.so
+7fee3eecb000-7fee3eecc000 rw-p 00108000 08:01 400243                     /lib/x86_64-linux-gnu/libm-2.23.so
+7fee3eecc000-7fee3f03e000 r-xp 00000000 08:01 14567                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fee3f03e000-7fee3f23e000 ---p 00172000 08:01 14567                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fee3f23e000-7fee3f248000 r--p 00172000 08:01 14567                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fee3f248000-7fee3f24a000 rw-p 0017c000 08:01 14567                      /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21
+7fee3f24a000-7fee3f24e000 rw-p 00000000 00:00 0 
+7fee3f24e000-7fee3f274000 r-xp 00000000 08:01 400145                     /lib/x86_64-linux-gnu/ld-2.23.so
+7fee3f456000-7fee3f45c000 rw-p 00000000 00:00 0 
+7fee3f472000-7fee3f473000 rw-p 00000000 00:00 0 
+7fee3f473000-7fee3f474000 r--p 00025000 08:01 400145                     /lib/x86_64-linux-gnu/ld-2.23.so
+7fee3f474000-7fee3f475000 rw-p 00026000 08:01 400145                     /lib/x86_64-linux-gnu/ld-2.23.so
+7fee3f475000-7fee3f476000 rw-p 00000000 00:00 0 
+7ffe5f736000-7ffe5f757000 rw-p 00000000 00:00 0                          [stack]
+7ffe5f7be000-7ffe5f7c1000 r--p 00000000 00:00 0                          [vvar]
+7ffe5f7c1000-7ffe5f7c3000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]

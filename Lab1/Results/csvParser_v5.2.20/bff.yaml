@@ -11,7 +11,7 @@
 #
 ##############################################################################
 campaign:
-    id: pnmnorm v5.2.30
+    id: csvParser v5.2.20
 
 ##############################################################################
 # TARGET APPLICATION INVOCATION OPTIONS:
@@ -30,7 +30,7 @@ campaign:
 #
 ##############################################################################
 target:
-    program: ~/pnmnorm
+    program: ~/csvParser
     cmdline_template: $PROGRAM $SEEDFILE
 
 
@@ -52,7 +52,7 @@ target:
 ##############################################################################
 
 directories:
-    seedfile_dir: seedfiles/pnm examples
+    seedfile_dir: seedfiles/csv_examples
     working_dir: ~/fuzzing
     results_dir: results
 
@@ -64,7 +64,7 @@ directories:
 #
 ##############################################################################
 runner:
-    runtimeout: 5
+    runtimeout: 2
     
 
 ##############################################################################
@@ -78,7 +78,7 @@ runner:
 #
 ##############################################################################
 debugger:
-    backtracelevels: 10
+    backtracelevels: 3
     
     
 ##############################################################################
@@ -112,7 +112,7 @@ debugger:
 ##############################################################################
 runoptions:
     first_iteration: 0
-    seed_interval: 20
+    seed_interval: 50
     minimize: True
     minimizer_timeout: 5000
     keep_unique_faddr: False
@@ -163,7 +163,7 @@ runoptions:
 # 
 ###################################################################################
 fuzzer:
-    fuzzer: bytemut
+    fuzzer: insert
     # fuzzer: swap
     # fuzzer: wave
     # fuzzer: drop
